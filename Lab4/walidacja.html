@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+    <title> Formularz rejestracyjny</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        div {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"]{
+            margin-bottom: 10px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        input:invalid {
+            border: 2px solid red;
+        }
+        input:valid {
+            border: 2px solid green;
+        }
+    </style>
+    <body>
+        <div>
+            <form action="#" method="get">
+            <p>
+            Imię*:<br>
+            <input type="text" name="imie" required placeholder="Jan" pattern="^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+( [A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+)?$"><br>
+            Nazwisko*:<br>
+            <input type="text" name="nazwisko" required placeholder="Kowalski" pattern="^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+(-[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+)?$"><br>
+            Email*:<br>
+            <input type="email" name="email" required placeholder="jkowalski@poczta.pl"><br>
+            Data urodzenia:<br>
+            <input type="date" name="data" min="1900-01-01" max="2020-01-01"><br>
+            Numer telefonu:<br>
+            <input type="tel" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789"><br>
+            Hasło*:<br>
+            <input type="password" name="haslo" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"><br>
+            </p>
+            <p>
+            Uczeń: <input type="radio" name="kto" value="uczen">
+            Student: <input type="radio" name="kto" value="student">
+            Pracownik: <input type="radio" name="kto" value="pracownik">
+            </p>
+            <p>
+            Zainteresowania:
+            <select name="zainteresowania" multiple size="3">
+                <option value="sport">Sport</option>
+                <option value="muzyka">Muzyka</option>
+                <option value="film">Film</option>
+                <option value="motoryzacja">Motoryzacja</option>
+                <option value="taniec">Taniec</option>
+                <option value="podróże">Podróże</option>
+            </select></p>
+            <p>
+            *Akceptuję regulamin:
+            <input type="checkbox" name="akceptacja" required>
+            </p>
+            <p>
+            <input type="submit" value="Rejestruj">
+            <input type="reset" value="Wyczyść">
+            </p>
+            </form>
+        </div>
+    </body>
+</html>

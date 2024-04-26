@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulatorek</title>
+    <link rel="stylesheet" href="CSS/kalkulatorek.css" type="text/css">
+    <script src="js/kalkulatorek.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Kalkulatorek</legend>
+        <table>
+            <tr>
+                <td>
+                    <div id="liczby">
+                        Liczba 1:<br>
+                        <input type="text" id="liczba1" required><br>
+                        Liczba 2:<br>
+                        <input type="text" id="liczba2" required><br>
+                    </div>
+                </td>
+                <td>
+                    <div id="operatory">
+                        <input type="radio" name="operator" value="+"> Dodaj<br>
+                        <input type="radio" name="operator" value="-"> Odejmij<br>
+                        <input type="radio" name="operator" value="*"> Pomnóż<br>
+                        <input type="radio" name="operator" value="/"> Podziel<br>
+                    </div>
+                </td> 
+            </tr>
+            <tr>
+                <td><button class="oblicz" onclick="oblicz()">Oblicz</button></td>
+                <td>Wynik: <input type="text" id="wynik" disabled></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

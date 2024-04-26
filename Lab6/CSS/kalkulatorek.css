@@ -1,0 +1,70 @@
+body {
+    background-color: #f0f0f0;
+}
+fieldset {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+}
+legend {
+    font-size: 20px;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+}
+td {
+    padding: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+input[type="radio"] {
+    margin: 5px 0;
+}
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #333;
+}
+#wynik {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+#liczby {
+    display: inline-block;
+}
+#operatory {
+    display: inline-block;
+}
+.oblicz {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.oblicz:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    fieldset {
+        width: 90%;
+    }
+}

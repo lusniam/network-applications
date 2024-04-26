@@ -1,0 +1,21 @@
+#slajd{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+img {
+    height: 160px;
+    width: 280px;
+    float: left;
+    margin: 1%;
+}
+
+.slajd{margin-left: 6%;}
+
+#naglowek{text-align:center;}
+
+@media screen and (max-width: 720px) {img{width: 93%;}}

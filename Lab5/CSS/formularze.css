@@ -1,0 +1,35 @@
+form{
+    background-color: lightyellow;
+    border: 1pt;
+    border-color: darkblue;
+    float: right;
+    margin-right: 45px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+}
+select, #surname, #age, #email{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+option, input[type=checkbox], input[type=radio]{
+    margin: 10px 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+input[type=submit], input[type=reset]{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}

@@ -1,0 +1,29 @@
+table{
+    background-color: lightyellow;
+    width: 94%;
+    margin: 2%;
+    border: 1pt;
+    border-color: darkblue;
+    border-style: solid;
+}
+caption{
+    font-size: 120%;
+    font-weight: bold;
+}
+thead, tfoot{
+    background-color: darkslateblue;
+    color: white;
+    font-size: 110%;
+    padding: 5pt;
+}
+td, th{
+    border-width: 1pt;
+    border-style: solid;
+    border-color: navy;
+}
+tfoot a{
+    color: white;
+}
+*.parzysty{
+    background-color: white;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dotacja</title>
+    <meta charset="utf-8">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    #formularz {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="month"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+    input[type="reset"],
+    input[type="submit"] {
+        padding: 5px 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    input[type="reset"]:hover,
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+</style>
+<body>
+    <div id="formularz">
+        <h1>Formularz dotacji</h1>
+        <form action="#" method="get">
+            <p><fieldset>
+                <label for="beneficjent">Beneficjent:</label>
+                <input name="beneficjent" type="text" pattern="[A-Z][A-Za-z\s\-]*" title="Beneficjent może zawierać tylko litery, spacje i myślniki i musi zaczynać się z wielkiej litery" required><br>
+                <label for="wartosc">Wartość dotacji:</label>
+                <input name="wartosc" type="number" min="20" step="5" title="Podaj wielokrotność liczby 5, nie mniejszą niż 20" required>
+            </fieldset></p>
+            <p><fieldset>
+                <legend>Dane karty płatniczej</legend>
+                <label for="rodzaj">Karta:</label>
+                <input type="radio" name="rodzaj" value="visa" title="Wybierz rodzaj karty" required>Visa
+                <input type="radio" name="rodzaj" value="mastercard" title="Wybierz rodzaj karty" required>Mastercard
+                <input type="radio" name="rodzaj" value="amex" title="Wybierz rodzaj karty" required>American Express<br>
+                <label for="numer">Numer:</label>
+                <input name="numer" type="text" pattern="[0-9]{16}" title="Numer karty powinien składać się z 16 cyfr" required><br>
+                <label for="data">Data ważności:</label>
+                <input name="data" type="month" min="2024-01" max="2050-12" title="Podaj miesiąc i rok daty ważności karty" required><br>
+                <label for="cvv">Kod CVV:</label>
+                <input name="cvv" type="text" pattern="[0-9]{3}[0-9]?" title="Podaj kod CVV złożony z 3 lub 4 cyfr podanych na odwrocie karty" required>
+            </fieldset></p>
+            <p>
+                <label for="darczynca">Darczyńca:</label>
+                <input name="darczynca" type="text" pattern="[A-Z][A-Za-z\s\-]*" title="Darczyńca może zawierać tylko litery, spacje i myślniki i musi zaczynać się z wielkiej litery" required><br>
+            </p>
+            <p>
+            <input type="reset" value="Wyczyść dane">
+            <input type="submit" value="Wyślij">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
