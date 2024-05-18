@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/tabele.css" type="text/css">
+    <title> Szybki kurs HTML </title>
+</head>
+<body>
+    <header><h1>Szybki kurs HTML</h1></header>
+    <main>
+      <nav>
+        <ul id="nav">
+          <li><a href="index.html">Podstawy</a></li>
+          <li><a href="tabele.html">Tabele</a></li>
+          <li><a href="">Formularze</a>
+            <ul>
+              <li><a href="formularze.html">Pola formularza</a></li>
+              <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+            </ul>
+          </li>
+          <li><a href="galeria.html" title="">Galeria</a></li>
+        </ul>
+      </nav>
+    <article>
+        <h2>Podstawowe znaczniki do tworzenia tabel to:</h2>
+        <ul>
+            <li>&lt;table&gt; - znacznik zawierający całą tabelę</li>
+            <li>&lt;caption&gt; - tytuł tabeli</li>
+            <li>&lt;thead&gt; - nagłówek tabeli</li>
+            <li>&lt;tbody&gt; - zawartość tabeli</li>
+            <li>&lt;tfoot&gt; - stopka tabeli</li>
+            <li>&lt;tr&gt; - wiersz tabeli</li>
+            <li>&lt;td&gt; - komórka tabeli (zawarta w wierszu)</li>
+            <li>&lt;th&gt; - komórka nagłówkowa tabeli (również zawarta w wierszu)</li>
+        </ul>
+    </article>
+    <div id="tabela">
+        <h2>Przykładowa tabela HTML:</h2>
+        <table>
+            <caption>Popularność języków programowania</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Język programowania</th>
+                    <th colspan="2">Pozycja</th>
+                </tr>
+                <tr>
+                    <th>Luty 2024</th>
+                    <th>Styczeń 2020</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Java</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>10</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        Na podstawie: <a href="https://itwiz.pl/jezyki-programowania-ranking-styczen-2020/">Ranking 2020</a>
+                        oraz <a href="https://merehead.com/pl/blog/top-jezyki-programowania-na-rok-2024/">Ranking 2024</a>
+                    </td>
+                </tr>
+        </table>
+    </div>
+    <footer> &copy;BP</footer>
+    </main>
+</body>
+</html>
