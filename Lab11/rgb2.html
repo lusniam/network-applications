@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularz RGB</title>
+    <script src="js/rgb2.js" src="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/rgb.css">
+</head>
+<body>
+    <article>
+        <h1>Test localStorage</h1>
+        <form>
+            <label for="kod">Kod szesnastkowy:</label>
+            <input type="text" id="kod" name="kod"><br>
+        
+            <label for="nazwa">Nazwa koloru:</label>
+            <input type="text" id="nazwa" name="nazwa"><br>
+        
+            <button type="button" onclick="zapiszPare()">Zapisz parę</button>
+            <button type="button" onclick="pokazWszystkiePary()">Pokaż wszystkie pary</button>
+            <button type="button" onclick="usunDane()">Usuń dane</button>
+        </form>
+        <h1>Dane z localStorage:</h1>
+        <div id="pary"></div>
+    </article>
+</body>
+</html>

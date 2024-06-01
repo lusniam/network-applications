@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Koszyk</title>
+    <script src="js/koszyk.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/koszyk.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Koszyk</h1>
+
+        <form>
+            <label for="nazwa">Nazwa produktu:</label>
+            <input type="text" id="nazwa" name="nazwa"><br><br>
+
+            <label for="cena">Cena:</label>
+            <input type="text" id="cena" name="cena"><br><br>
+
+            <label for="kolor">Kolor:</label>
+            <input type="text" id="kolor" name="kolor"><br><br>
+
+            <label for="liczbaSztuk">Liczba sztuk:</label>
+            <input type="text" id="liczbaSztuk" name="liczbaSztuk"><br><br>
+
+            <button type="button" onclick="zapiszProdukt()">Zapisz produkt do koszyka</button>
+            <button type="button" onclick="wyswietlKoszyk()">Wyświetl koszyk</button>
+            <button type="button" onclick="usunWszystkieProdukty()">Usuń wszystkie produkty</button>
+        </form>
+        
+        <div id="wyszukajProdukt">
+            <label for="wyszukaj">Wyszukaj produkt:</label>
+            <input type="text" id="wyszukaj" name="wyszukaj">
+            <button type="button" onclick="wyszukajProdukt()">Wyszukaj</button>
+        </div>
+
+        <h1>Produkty w koszyku</h1>
+        <div id="koszyk"></div>
+        </div>
+</body>
+</html>
